@@ -1,0 +1,66 @@
+= %APPNAME% =
+
+== Summary Of Features ==
+
+=== Overview ===
+
+Bold text: '''This text is bold'''
+
+External Link: [http://www.example.com|Example Website]
+Internal Link: [[page2|Page 2]]
+
+External Image:
+[Image:https://cyborgunicorn.com.au/photo-julian.jpg|External Image]
+Internal Image:
+[[Image:example.jpg|Example]] [[Image:example.jpg|Example]]
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+=== Lists ===
+
+Unordered list:
+*Item 1
+*Item 2
+
+Ordered list:
+# Item 1
+# Item 2
+
+=== Example Code ===
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+<code>print(\"Hello %APPNAME%!\")</code>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+- - - -
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+<code>print(\"Hello %APPNAME%!\")</code>
+
+And a table:
+
+{|
+! Header 1 !! Header 2 !! Header 3
+|-
+| Cell 1 || Cell 2 || Cell 3
+|-
+| Cell 4 || Cell 5 || Cell 6
+|}
+
+And another table:
+
+{|
+! Header 1 !! Header 2 !! Header 3
+|-
+| [[Image:example.jpg|Example]] || Cell 2 || Cell 3
+|-
+| Cell 4 || [[Image:example.jpg|Example]] || Cell 6
+|-
+| Cell 7 || Cell 8 || [[Image:example.jpg|Example]]
+|}
+
+- - - -
+
+Powered by %APPNAME%

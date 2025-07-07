@@ -1,0 +1,63 @@
+= %APPNAME% =
+
+=== Page 2 ===
+
+This is page 2.
+
+Tables.
+
+==== Table 1 ====
+
+{|
+! Header 1 !! Header 2 !! Header 3
+|-
+| [[Image:example.jpg|Example]] || Cell 2 || Cell 3
+|-
+| Cell 4 || [[Image:example.jpg|Example]] || Cell 6
+|-
+| Cell 7 || Cell 8 || [[Image:example.jpg|Example]]
+|}
+
+==== Table 2 ====
+
+Use consistent prefixes for different entity types:
+
+{|
+! Type !! Prefix !! Example
+|-
+| Variables || Type prefix || <code>objItem, strName, blnFound</code>
+|-
+| Players || Name || <code>Game.Players.hero</code>
+|-
+| NPCs || Name || <code>Game.NPCs.wizard</code> 
+|-
+| Objects || Descriptive || <code>Game.Objects.magic_sword</code>
+|-
+| Fixtures || Location_item || <code>Game.Fixtures.castle_door</code>
+|-
+| Locations || Descriptive || <code>Game.Locations.throne_room</code>
+|}
+
+==== Table 3 ====
+
+Use consistent prefixes for different entity types:
+
+{|
+! Type !! Prefix !! Example
+|-
+| Variables || Type prefix || objItem, strName, blnFound
+|-
+| Players || Name || Game.Players.hero
+|-
+| NPCs || Name || Game.NPCs.wizard 
+|-
+| Objects || Descriptive || Game.Objects.magic_sword
+|-
+| Fixtures || Location_item || Game.Fixtures.castle_door
+|-
+| Locations || Descriptive || Game.Locations.throne_room
+|}
+
+- - - -
+
+Powered by %APPNAME%
