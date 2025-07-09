@@ -156,6 +156,7 @@ table.gscw-table
 	border-collapse: collapse;
 	border: 1px solid #ddd;
 	font-family: arial;
+	margin-bottom: 30px;
 	width: 100%;
 }
 
