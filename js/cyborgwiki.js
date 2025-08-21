@@ -5,7 +5,17 @@
 function cyborgWikiToHtml(strWiki_a, strInternalPageURL_a, strInternalImageURL_a, arrPlaceholders_a) 
 {
 	var intI;
-	var strResult = strWiki_a;
+	
+	// Extract code blocks first to protect them from processing
+	var arrCodeBlocks = [];
+	var intCodeCounter = 0;
+	var strResult = strWiki_a.replace(/<code>([\s\S]*?)<\/code>/gi, function(strMatch_a, strCode_a) 
+	{
+		var strPlaceholder = '~CODE_' + intCodeCounter + '~';
+		arrCodeBlocks.push(strCode_a);
+		intCodeCounter++;
+		return strPlaceholder;
+	});
 
 	// Replace placeholders
 	if (arrPlaceholders_a) 
@@ -136,8 +146,18 @@ function cyborgWikiToHtml(strWiki_a, strInternalPageURL_a, strInternalImageURL_a
 	// Rejoin processed lines
 	strResult = arrNewLines.join('<br>');
 
-	// Handle inline code blocks
-	strResult = strResult.replace(/<code>([\s\S]*?)<\/code>\s*/g, '<pre class="gscw-code">$1</pre>');
+	// Restore code blocks (this replaces the old inline code block handling)
+// Restore code blocks (this replaces the old inline code block handling)
+	for (intI = 0; intI < arrCodeBlocks.length; intI++) 
+	{
+		// HTML escape the code content
+		var strEscapedCode = arrCodeBlocks[intI]
+			.replace(/&/g, '&amp;')
+			.replace(/</g, '&lt;')
+			.replace(/>/g, '&gt;');
+		
+		strResult = strResult.replace('~CODE_' + intI + '~', '<pre class="gscw-code">' + strEscapedCode + '</pre>');
+	}
 
 	return strResult;
 }
