@@ -29,7 +29,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Cyborg Wiki Test</title>
+		<title>CyborgWiki Test</title>
 		<link rel="stylesheet" type="text/css" href="css/cyborgWiki.css">
 	</head>
 	<body>
@@ -46,7 +46,7 @@
 			var strWikiContent = <?php echo json_encode($strWikiContent); ?>;
 
 			var arrPlaceholders = [
-				{ placeholder: "%APPNAME%", value: "Cyborg Wiki" }
+				{ placeholder: "%APPNAME%", value: "CyborgWiki" }
 			];
 
 			var strHtml = cyborgWikiToHtml(strWikiContent, "?wiki=", "images/", arrPlaceholders);

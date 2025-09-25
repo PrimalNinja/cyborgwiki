@@ -1,4 +1,4 @@
-// Cyborg Wiki v20250708
+// CyborgWiki v20250708
 // (c) 2025 Cyborg Unicorn Pty Ltd.
 // This software is released under MIT License.
 
